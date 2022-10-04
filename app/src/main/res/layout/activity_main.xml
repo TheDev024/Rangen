@@ -15,8 +15,7 @@
         android:gravity="center"
         android:layout_gravity="center_horizontal"
         android:textSize="36sp"
-        android:textStyle="bold"/>
-
+        android:textStyle="bold" />
     <ImageButton
         android:id="@+id/start_button"
         android:layout_width="wrap_content"
@@ -38,9 +37,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/generated_number"
+            android:gravity="center"
             android:textAlignment="center"
             android:textSize="216sp"
             android:textStyle="bold"
+            android:padding="24dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -50,6 +51,7 @@
             android:layout_width="124dp"
             android:layout_height="wrap_content"
             android:hint="@string/minimum"
+            android:layout_marginHorizontal="16dp"
             app:layout_constraintEnd_toStartOf="@id/max_input_layout"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/generated_number">
@@ -67,6 +69,7 @@
             android:layout_width="124dp"
             android:layout_height="wrap_content"
             android:hint="@string/maximum"
+            android:layout_marginHorizontal="16dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/min_input_layout"
             app:layout_constraintTop_toBottomOf="@id/generated_number">
