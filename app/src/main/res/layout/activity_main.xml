@@ -28,7 +28,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/run_layout"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:visibility="gone">
@@ -39,8 +39,9 @@
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:text="@string/generated_number"
-            android:textAlignment="center"
-            android:textSize="336sp"
+            android:gravity="center"
+            android:textSize="224sp"
+            android:minHeight="300dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
