@@ -5,6 +5,6 @@
     android:viewportWidth="108"
     android:viewportHeight="108"
     android:tintMode="screen"
-    android:tint="#00F">
+    android:tint="#4E7ABC">
     <path />
 </vector>
