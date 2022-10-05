@@ -5,4 +5,6 @@
     <string name="maximum">Maximum</string>
     <string name="empty" />
     <string name="title">Random Number\nGenerator</string>
+    <string name="min_start">0</string>
+    <string name="max_start">100</string>
 </resources>

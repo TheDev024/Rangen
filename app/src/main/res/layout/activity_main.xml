@@ -11,9 +11,9 @@
         android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/title"
-        android:gravity="center"
         android:layout_gravity="center_horizontal"
+        android:gravity="center"
+        android:text="@string/title"
         android:textSize="36sp"
         android:textStyle="bold" />
 
@@ -23,8 +23,8 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:backgroundTint="#0000"
-        android:src="@drawable/ic_baseline_play_circle"
-        android:importantForAccessibility="no" />
+        android:importantForAccessibility="no"
+        android:src="@drawable/ic_baseline_play_circle" />
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/run_layout"
@@ -37,12 +37,12 @@
             android:id="@+id/generated_number"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:padding="8dp"
             android:text="@string/generated_number"
             android:textAlignment="center"
             android:textSize="336sp"
-            android:padding="8dp"
-            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
         <com.google.android.material.textfield.TextInputLayout
@@ -50,16 +50,19 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="124dp"
             android:layout_height="wrap_content"
-            android:hint="@string/minimum"
             android:layout_marginHorizontal="16dp"
+            android:hint="@string/minimum"
             app:layout_constraintEnd_toStartOf="@id/max_input_layout"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@id/generated_number">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/min_input_field"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="number" />
+                android:inputType="number"
+                android:text="@string/min_start"
+                android:maxLength="5" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -68,16 +71,19 @@
             style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:layout_width="124dp"
             android:layout_height="wrap_content"
-            android:hint="@string/maximum"
             android:layout_marginHorizontal="16dp"
+            android:hint="@string/maximum"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@id/min_input_layout"
             app:layout_constraintTop_toBottomOf="@id/generated_number">
 
             <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/max_input_field"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:inputType="number"/>
+                android:inputType="number"
+                android:text="@string/max_start"
+                android:maxLength="5" />
 
         </com.google.android.material.textfield.TextInputLayout>
 
